@@ -10,4 +10,20 @@ public abstract class Publicacion {
         this.categoria = categoria;
         this.editorial = editorial;
     }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public Autor getAutor() {
+        return autor;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public Editorial getEditorial() {
+        return editorial;
+    }
 }

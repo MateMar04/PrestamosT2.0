@@ -6,6 +6,7 @@ class Biblioteca {
     private final ArrayList<Prestamo> listaPrestamos;
     private final ArrayList listaLibro;
     private final ArrayList listaRevista;
+    private final ArrayList listaClientes;
 
 
     public Biblioteca(String nombre) {
@@ -14,6 +15,7 @@ class Biblioteca {
         listaPrestamos = new ArrayList();
         listaLibro = new ArrayList();
         listaRevista = new ArrayList();
+        listaClientes = new ArrayList();
     }
 
     void agregar(Publicacion pub) {
@@ -24,6 +26,10 @@ class Biblioteca {
         if (pub.getClass() == Revista.class) {
             listaRevista.add(pub);
         }
+    }
+
+    void agregarCliente(Cliente cliente) {
+        listaClientes.add(cliente);
     }
 
     void prestar(Prestamo pub) {
@@ -49,14 +55,16 @@ class Biblioteca {
         }
     }
 
-    void MostrarListaPrestamos() {
-        for (Prestamo prestamo : listaPrestamos) {
-            System.out.println(prestamo);
-        }
+    ArrayList<Prestamo> MostrarListaPrestamos() {
+        return listaPrestamos;
     }
 
     int CantidadDeRevistas() {
         return listaRevista.size();
+    }
+
+    ArrayList<Cliente> mostrarClientes() {
+        return listaClientes;
     }
 
 }

@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Ventana_Principal extends javax.swing.JFrame{
+public class Ventana_Principal extends javax.swing.JFrame {
     private JPanel panel1;
     private JButton clientesButton;
     private JButton librosButton;
@@ -25,7 +25,7 @@ public class Ventana_Principal extends javax.swing.JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
-                new Ventana_Clientes().setVisible(true);
+                new Ventana_Clientes(biblio).setVisible(true);
             }
         });
         librosButton.addMouseListener(new MouseAdapter() {
@@ -33,7 +33,7 @@ public class Ventana_Principal extends javax.swing.JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
-                new Ventana_Libros().setVisible(true);
+                new Ventana_Libros(biblio).setVisible(true);
             }
         });
         revistasButton.addMouseListener(new MouseAdapter() {
@@ -41,7 +41,7 @@ public class Ventana_Principal extends javax.swing.JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
-                new Ventana_Revistas().setVisible(true);
+                new Ventana_Revistas(biblio).setVisible(true);
             }
         });
     }
