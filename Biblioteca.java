@@ -67,6 +67,10 @@ class Biblioteca {
         return listaClientes;
     }
 
+    ArrayList<Libro> mostrarLibros() {
+        return listaLibro;
+    }
+
 }
 
 
