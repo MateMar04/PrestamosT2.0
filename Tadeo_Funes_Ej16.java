@@ -22,6 +22,7 @@ public class Tadeo_Funes_Ej16 {
 
         Autor a1 = new Autor("J. R. R. Tolkien");
         Autor a2 = new Autor("Juan de la Torre");
+        Autor a3 = new Autor("J. K. Rowling");
 
         Categoria cat1 = new Categoria("Fantastico");
         Categoria cat2 = new Categoria("Deporte");
@@ -32,6 +33,7 @@ public class Tadeo_Funes_Ej16 {
 
         Publicacion lib1 = new Libro("El seÃ±or de los anillos", a1, cat1, e1);
         Publicacion rev1 = new Revista("Todo deporte", a2, cat2, e2);
+        Publicacion lib2 = new Libro("Harry Potter", a3, cat1, e2);
 
         Prestamo pres1 = new Prestamo(c1, "12/5/2020", "12/6/2020");
         pres1.agregar(lib1);
