@@ -53,7 +53,7 @@ public class Tadeo_Funes_Ej16 {
         System.out.println("Lista de prestamos:");
         biblio1.MostrarListaPrestamos();
 
-        new Ventana_Principal().setVisible(true);
+        new Ventana_Principal(biblio1).setVisible(true);
     }
 
 }
