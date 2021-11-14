@@ -7,7 +7,7 @@ class Provincia {
 
     @Override
     public String toString() {
-        return "Provincia{" + "nombre=" + nombre + '}';
+        return nombre;
     }
 
 }

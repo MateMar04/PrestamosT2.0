@@ -7,6 +7,6 @@ class Editorial {
 
     @Override
     public String toString() {
-        return "Editorial{" + "nombre=" + nombre + '}';
+        return nombre;
     }
 }

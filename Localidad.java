@@ -9,7 +9,7 @@ class Localidad {
 
     @Override
     public String toString() {
-        return "Localidad{" + "nombre=" + nombre + " " + prov + '}';
+        return nombre + ", " + prov;
     }
 
 

@@ -9,6 +9,6 @@ class Barrio {
 
     @Override
     public String toString() {
-        return "Barrio{" + "nombre=" + nombre + " " + loc + '}';
+        return nombre + ", " + loc;
     }
 }
