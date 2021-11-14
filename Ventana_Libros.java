@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 
 public class Ventana_Libros extends javax.swing.JFrame {
-    private JPanel panel1;
+    private JPanel panel_principal;
     private JComboBox seleccion_l;
     private JLabel titulo;
     private JLabel autor;
@@ -13,9 +13,9 @@ public class Ventana_Libros extends javax.swing.JFrame {
     private JLabel editorial;
 
     public Ventana_Libros(Biblioteca biblio) {
-        add(panel1);
-        setTitle("Biblioteca");
+        add(panel_principal);
         setSize(500, 400);
+        setTitle("Libros");
 
         ArrayList<Libro> libros = biblio.mostrarLibros();
         Vector comboBoxItems = new Vector();

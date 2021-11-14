@@ -3,7 +3,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Ventana_Principal extends javax.swing.JFrame {
-    private JPanel panel1;
+    private JPanel panel_principal;
     private JButton clientesButton;
     private JButton librosButton;
     private JButton revistasButton;
@@ -12,9 +12,9 @@ public class Ventana_Principal extends javax.swing.JFrame {
     private JLabel cant_revistas;
 
     public Ventana_Principal(Biblioteca biblio) {
-        add(panel1);
-        setTitle("Biblioteca");
+        add(panel_principal);
         setSize(500, 400);
+        setTitle("Biblioteca");
 
         cant_publicaciones.setText(String.valueOf(biblio.CantidadDePublicacionesTotal()));
         cant_libros.setText(String.valueOf(biblio.CantidadDeLibros()));
