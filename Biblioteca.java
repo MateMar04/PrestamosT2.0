@@ -50,8 +50,8 @@ class Biblioteca {
 
 
     void MostrarListaPublicaciones() {
-        for (Publicacion publicacion : listaPublicacion) {
-            System.out.println(publicacion);
+        for (int i = 0; i < listaPublicacion.size(); i++) {
+            System.out.println(listaPublicacion.get(i).toString());
         }
     }
 

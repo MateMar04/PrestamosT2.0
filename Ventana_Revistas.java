@@ -20,8 +20,8 @@ public class Ventana_Revistas extends javax.swing.JFrame {
         ArrayList<Revista> revistas = biblio.mostrarRevistas();
         Vector comboBoxItems = new Vector();
 
-        for (Revista r : revistas) {
-            comboBoxItems.add(r.getTitulo());
+        for (int i = 0; i < revistas.size(); i++) {
+            comboBoxItems.add(revistas.get(i).getTitulo());
         }
 
         seleccion_r.setModel(new javax.swing.DefaultComboBoxModel(comboBoxItems));

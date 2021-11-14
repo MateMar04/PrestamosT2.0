@@ -21,8 +21,8 @@ public class Ventana_Clientes extends javax.swing.JFrame {
         ArrayList<Cliente> clientes = biblio.mostrarClientes();
         Vector comboBoxItems = new Vector();
 
-        for (Cliente cliente : clientes) {
-            comboBoxItems.add(cliente.getNombre());
+        for (int i = 0; i < clientes.size(); i++) {
+            comboBoxItems.add(clientes.get(i).getNombre());
         }
 
         seleccion_c.setModel(new javax.swing.DefaultComboBoxModel(comboBoxItems));
@@ -37,11 +37,12 @@ public class Ventana_Clientes extends javax.swing.JFrame {
                 direccion.setText(c.getDirec().toString());
 
                 Vector comboBoxItems = new Vector();
-                for (Prestamo p : biblio.MostrarListaPrestamos()) {
-                    ArrayList<Publicacion> publicacionesPrestadas = p.getLista();
-                    if (p.getCliente() == c) {
-                        for (Publicacion pu : publicacionesPrestadas) {
-                            comboBoxItems.add(pu.getTitulo());
+                ArrayList<Prestamo> prestamos = biblio.MostrarListaPrestamos();
+                for (int i = 0; i < biblio.CantidadDePrestamos(); i++) {
+                    ArrayList<Publicacion> publicacionesPrestadas = prestamos.get(i).getLista();
+                    if (prestamos.get(i).getCliente() == c) {
+                        for (int j = 0; j < publicacionesPrestadas.size(); j++) {
+                            comboBoxItems.add(publicacionesPrestadas.get(i).getTitulo());
                         }
                     }
                 }

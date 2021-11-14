@@ -20,8 +20,8 @@ public class Ventana_Libros extends javax.swing.JFrame {
         ArrayList<Libro> libros = biblio.mostrarLibros();
         Vector comboBoxItems = new Vector();
 
-        for (Libro libro : libros) {
-            comboBoxItems.add(libro.getTitulo());
+        for (int i = 0; i < libros.size(); i++) {
+            comboBoxItems.add(libros.get(i).getTitulo());
         }
 
         seleccion_l.setModel(new javax.swing.DefaultComboBoxModel(comboBoxItems));
