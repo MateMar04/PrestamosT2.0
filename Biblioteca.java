@@ -71,6 +71,10 @@ class Biblioteca {
         return listaLibro;
     }
 
+    ArrayList<Revista> mostrarRevistas() {
+        return listaRevista;
+    }
+
 }
 
 
