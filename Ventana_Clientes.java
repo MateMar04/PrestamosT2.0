@@ -16,7 +16,7 @@ public class Ventana_Clientes extends javax.swing.JFrame {
     public Ventana_Clientes(Biblioteca biblio) {
         add(panel1);
         setTitle("Biblioteca");
-        setSize(400, 400);
+        setSize(500, 400);
 
         ArrayList<Cliente> clientes = biblio.mostrarClientes();
         Vector comboBoxItems = new Vector();

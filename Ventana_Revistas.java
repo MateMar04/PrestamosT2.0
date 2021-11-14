@@ -15,7 +15,7 @@ public class Ventana_Revistas extends javax.swing.JFrame {
     public Ventana_Revistas(Biblioteca biblio) {
         add(panel1);
         setTitle("Biblioteca");
-        setSize(400, 400);
+        setSize(500, 400);
 
         ArrayList<Revista> revistas = biblio.mostrarRevistas();
         Vector comboBoxItems = new Vector();

@@ -14,7 +14,7 @@ public class Ventana_Principal extends javax.swing.JFrame {
     public Ventana_Principal(Biblioteca biblio) {
         add(panel1);
         setTitle("Biblioteca");
-        setSize(400, 400);
+        setSize(500, 400);
 
         cant_publicaciones.setText(String.valueOf(biblio.CantidadDePublicacionesTotal()));
         cant_libros.setText(String.valueOf(biblio.CantidadDeLibros()));
